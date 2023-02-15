@@ -1,0 +1,105 @@
+/* Container for the game elements */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #697096;
+  }
+  
+  /* Container for the game score */
+  .score-container {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Container for the game record */
+  .record-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  /* Container for the squares */
+  .squares-container {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 20px;
+  }
+  
+  /* Styles for the squares */
+  .square {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .glow {
+    background-color: rgb(255, 184, 143);
+    
+    box-shadow: 0px 0px 40px rgb(255, 159, 103);
+  }
+  
+  .square.green {
+    background-color: #00cc44;
+  }
+  
+  .square.yellow {
+    background-color: #ffff00;
+  }
+  
+  .square.blue {
+    background-color: #3366ff;
+  }
+  
+  .square.red {
+    background-color: #ff0000;
+  }
+  
+  /* Container for the start button */
+  .start-button-container {
+    margin-top: 20px;
+  }
+  
+  /* Styles for the start button */
+  .start-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .start-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Container for the exit button */
+  .exit-container {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+  
+  /* Styles for the exit button */
+  button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #d32f2f;
+  }
