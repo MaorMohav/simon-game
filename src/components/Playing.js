@@ -11,6 +11,24 @@ const Playing = () => {
   const [currentMove, setCurrentMove] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const saveRecord = async () => {
+    try {
+      const response = await fetch('/api/record', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          record: score
+        })
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
 
 
   const handleClick = (index) => {
@@ -34,6 +52,7 @@ const Playing = () => {
         setCurrentMove(0);
         if (score + 1 > record) {
           setRecord(score + 1);
+          saveRecord();
         }
 
         setComputerMoves([...computerMoves, Math.floor(Math.random() * 4) + 1]);
