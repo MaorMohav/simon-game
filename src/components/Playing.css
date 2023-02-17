@@ -14,6 +14,14 @@
     font-size: 24px;
     font-weight: bold;
   }
+  .failed-container {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .notfailed-container {
+    display: none;
+  }
   
   /* Container for the game record */
   .record-container {
@@ -62,7 +70,7 @@
   
   /* Container for the start button */
   .start-button-container {
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
   /* Styles for the start button */
@@ -85,7 +93,9 @@
   .exit-container {
     position: absolute;
     bottom: 10px;
-    left: 20px;
+    left: 980px;
+    bottom:100px;
+    
   }
   
   /* Styles for the exit button */
