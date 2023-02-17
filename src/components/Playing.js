@@ -183,10 +183,10 @@ const Playing = () => {
       </div>
       
       <div className="score-container">
-        Score: {score}
+        Score : {score}
       </div>
       <div className="record-container">
-        Record: {record}
+        Record : {record}
       </div>
       <div className="squares-container">
         <div

@@ -11,14 +11,19 @@
   /* Container for the game score */
   .score-container {
     margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 33px;
+    font-family: Fantasy ;
+    text-shadow: 2px 2px 3px rgb(203, 191, 248);
+    
+
   }
   .failed-container {
     margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+    font-size: 33px;
+  
+    text-shadow: 2px 2px 3px rgb(243, 135, 131);
+    }
+
   .notfailed-container {
     display: none;
   }
@@ -26,7 +31,9 @@
   /* Container for the game record */
   .record-container {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px;
+    font-family: Fantasy ;
+    text-shadow: 2px 2px 3px rgb(215, 206, 247);
   }
   /* Container for the squares */
   .squares-container {
